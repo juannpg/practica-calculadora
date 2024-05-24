@@ -4,10 +4,6 @@
 
 Este es un proyecto personal donde he creado una calculadora básica utilizando HTML, CSS y JavaScript. Es una herramienta útil para realizar cálculos simples de manera rápida y sencilla.
 
-## Demo
-
-Puedes probar la calculadora en acción [aquí](URL_DEMO).
-
 ## Características
 
 - **Operaciones básicas**: Suma, resta, multiplicación y división.
