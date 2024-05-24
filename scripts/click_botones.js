@@ -1,46 +1,44 @@
-// Get the container of the buttons
-var contenedorBotones = document.getElementById("botones");
+// Obtengo el contenedor de botones
+const contenedorBotones = document.getElementById("botones");
 
-// Listen for click events on the buttons
+// compruebo los clicks en todo el div
 contenedorBotones.addEventListener("click", function (event) {
-  // Check if the target is a button
+  //compruebo si el target es un boton
   if (event.target.tagName === "BUTTON") {
-    // If the button is AC, clear the output
+    // si es AC borra todo
     if (event.target.id === "AC") {
       document.getElementById("textoOutput").innerHTML = "";
     } else {
-      // If the button is =, perform the operation
+      // Si es = muestra el resultado
       if (event.target.id === "=") {
         realizarOperacion();
       } else {
-        // Otherwise, add the button's text to the output
+        // else, escribe el input
         document.getElementById("textoOutput").innerHTML += event.target.innerText;
       }
     }
   }
 });
 
-// Function to perform the operation
 function realizarOperacion() {
-  // Get the text from the output
-  var operacion = document.getElementById("textoOutput").innerText;
-  // Perform the operation
-  var resultado = eval(operacion);
-  // Clear the output
+  // obtengo el texto del input
+  const operacion = document.getElementById("textoOutput").innerText;
+  //lo realizo con la función eval
+  const resultado = eval(operacion);
+  // limpio
   document.getElementById("textoOutput").innerHTML = "";
-  // Show the result in the output
+  // muestra el resultado
   document.getElementById("textoOutput").innerHTML = resultado;
 
-  // Function to clear the output after 3 seconds
+  // si es 69 o 69420, muestra un mensaje y se va en 3 segundos
+  if (resultado === 69 || resultado === 69420) {
+    document.getElementById("textoOutput").innerHTML = "pillado pajerjo jijijiji.";
+    eliminarPillado();
+  }
+
   function eliminarPillado() {
     setTimeout(() => {
       document.getElementById("textoOutput").innerHTML = "";
     }, 3000);
-  }
-
-  // If the result is 69 or 69420, say it was taken and clear the output after 3 seconds
-  if (resultado === 69 || resultado === 69420) {
-    document.getElementById("textoOutput").innerHTML = "pillado pajerjo jijijiji.";
-    eliminarPillado();
   }
 }
