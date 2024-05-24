@@ -40,7 +40,7 @@ function realizarOperacion() {
 
   // If the result is 69 or 69420, say it was taken and clear the output after 3 seconds
   if (resultado === 69 || resultado === 69420) {
-    document.getElementById("textoOutput").innerHTML = "pillado.";
+    document.getElementById("textoOutput").innerHTML = "pillado pajerjo jijijiji.";
     eliminarPillado();
   }
 }
