@@ -1,0 +1,77 @@
+body {
+  background-color: rgba(18,18,18,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+p {
+  /* border-style: solid;
+  border-color: black; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+#calculadora {
+  background-color: #2e2e2e;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-radius: 17px;
+  height: 380px;
+  width: 365px;
+  padding-top: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+div#output {
+  background-color: #cecece;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  margin-bottom: 17px;
+  height: 15px;
+  text-align: right;
+}
+
+/* div#botones {
+  border-style: solid;
+  border-color: rgb(119, 0, 255);
+
+} */
+
+div.botones1, .botones2, .botones3, .botones4 {
+  /* border-style: solid;
+  border-color: rgb(119, 0, 255);*/
+  /* display: grid; */
+  height: fit-content;
+  width: fit-content;
+
+}
+
+button {
+  height: 50px;
+  width: 75px;
+  margin: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color :#535353;
+  color: rgb(161, 161, 161);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d8d8d8;
+}
