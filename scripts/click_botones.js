@@ -21,13 +21,12 @@ contenedorBotones.addEventListener("click", function (event) {
 });
 
 function realizarOperacion() {
-  // obtengo el texto del input
+  //obtengo las variables
   const operacion = document.getElementById("textoOutput").innerText;
-  //lo realizo con la función eval
   const resultado = eval(operacion);
-  // limpio
+
+  //muestro el resultado
   document.getElementById("textoOutput").innerHTML = "";
-  // muestra el resultado
   document.getElementById("textoOutput").innerHTML = resultado;
 
   // si es 69 o 69420, muestra un mensaje y se va en 3 segundos
