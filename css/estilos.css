@@ -15,7 +15,7 @@ p {
 }
 
 #calculadora {
-  background-color: #ddc9b8;
+  background-color: #fff3e8;
   border-style: solid;
   border-color: #d3d3d3;
   border-radius: 17px;
@@ -55,7 +55,7 @@ button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   border-radius: 10px;
-  background-color :#f8f1d4;
+  background-color :#f7e5c5;
   color: rgb(161, 161, 161);
   border: none;
   padding: 10px 20px;
