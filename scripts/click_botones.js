@@ -9,6 +9,9 @@ contenedorBotones.addEventListener("click", function (event) {
     if (event.target.id === "AC") {
       document.getElementById("textoOutput").innerHTML = "";
     } else {
+    if (event.target.id === "temaClaro" || event.target.id === "temaOscuro") {
+      document.getElementById("textoOutput").innerHTML += "";
+    } else {
       // Si es = muestra el resultado
       if (event.target.id === "=") {
         realizarOperacion();
@@ -18,7 +21,7 @@ contenedorBotones.addEventListener("click", function (event) {
       }
     }
   }
-});
+}});
 
 function realizarOperacion() {
   //obtengo las variables

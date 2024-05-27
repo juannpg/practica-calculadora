@@ -13,8 +13,8 @@ function modoClaro() {
 }
 
 function modoOscuro() {
-  body.style ="background-color: rgba(18,18,18,255);";
-  calculadora.style ="background-color: #2e2e2e;";
-  button.style = "background-color :#535353;";
-  button.style = "color: rgb(161, 161, 161);";
+  body.style.backgroundColor ="rgba(18,18,18,255)";
+  calculadora.style.backgroundColor ="#2e2e2e";
+  button.style.backgroundColor = "#535353";
+  button.style.color = "rgb(161, 161, 161)";
 }
