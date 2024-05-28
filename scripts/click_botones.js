@@ -9,7 +9,7 @@ contenedorBotones.addEventListener("click", function (event) {
     if (event.target.id === "AC") {
       document.getElementById("textoOutput").innerHTML = "";
     } else {
-    if (event.target.id === "temaClaro" || event.target.id === "temaOscuro") {
+    if (event.target.id === "botonTema") {
       document.getElementById("textoOutput").innerHTML += "";
     } else {
       // Si es = muestra el resultado
