@@ -25,7 +25,7 @@ p {
   padding-left: 17px;
   padding-right: 17px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+  transition: background-color 0.3s;
 }
 
 div#output {
@@ -70,8 +70,4 @@ button {
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #d8d8d8;
 }
