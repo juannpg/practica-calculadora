@@ -71,3 +71,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+#botonTema {
+  background-color: #f7e5c5;
+}
