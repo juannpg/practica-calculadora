@@ -8,6 +8,7 @@ Este es un proyecto personal donde he creado una calculadora básica utilizando 
 
 - **Operaciones básicas**: Suma, resta, multiplicación y división.
 - **Interfaz intuitiva**: Diseño limpio y fácil de usar.
+- **Modo Claro y Oscuro**
 
 ## Instalación
 
