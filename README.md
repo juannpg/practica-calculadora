@@ -12,7 +12,7 @@ Este es un proyecto personal donde he creado una calculadora básica utilizando 
 
 ## Instalación
 
-No se requiere ninguna instalación especial para utilizar esta calculadora. Simplemente abre el archivo `index.html` en tu navegador web y ¡listo!
+No se requiere ninguna instalación especial para utilizar esta calculadora. Simplemente copia el repositorio donde desees, abre el archivo `index.html` en tu navegador web y ¡listo!
 
 ## Contribuir
 
