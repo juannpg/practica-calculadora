@@ -7,14 +7,12 @@ body {
 }
 
 p {
-  /* border-style: solid;
-  border-color: black; */
   margin-top: 0px;
   margin-bottom: 0px;
 
 }
 
-#calculadora {
+#main {
   background-color: #2e2e2e;
   border-style: solid;
   border-color: #d3d3d3;
@@ -42,19 +40,9 @@ div#output {
   text-align: right;
 }
 
-/* div#botones {
-  border-style: solid;
-  border-color: rgb(119, 0, 255);
-
-} */
-
 div.botones1, .botones2, .botones3, .botones4 {
-  /* border-style: solid;
-  border-color: rgb(119, 0, 255);*/
-  /* display: grid; */
   height: fit-content;
   width: fit-content;
-
 }
 
 button {

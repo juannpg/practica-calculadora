@@ -1,11 +1,11 @@
-const botonTema = document.getElementById("botonTema");
+const themeBtn = document.getElementById("themeBtn");
 var i = 0;
 
 const calculadora = document.getElementById("calculadora");
 const body = document.getElementById("body");
 const buttons = document.querySelectorAll("button");
 
-botonTema.addEventListener("click", cambioTema)
+themeBtn.addEventListener("click", cambioTema)
 
 function cambioTema() {
   if (i === 0) {
@@ -15,10 +15,10 @@ function cambioTema() {
     buttons.forEach((button) => {
       button.style.backgroundColor = "#f7e5c5";
       button.style.color = "rgb(161, 161, 161)";
-    botonTema.style.backgroundColor = "#535353";
+    themeBtn.style.backgroundColor = "#535353";
 
-    botonTema.innerHTML = "";
-    botonTema.innerHTML = "☾";
+    themeBtn.innerHTML = "";
+    themeBtn.innerHTML = "☾";
     i++;
     })
   } else {
@@ -28,10 +28,10 @@ function cambioTema() {
     buttons.forEach((button) => {
       button.style.backgroundColor = "#535353";
       button.style.color = "rgb(161, 161, 161)";
-    botonTema.style.backgroundColor = "#f7e5c5";
+    themeBtn.style.backgroundColor = "#f7e5c5";
 
-    botonTema.innerHTML = "";
-    botonTema.innerHTML = "☼";
+    themeBtn.innerHTML = "";
+    themeBtn.innerHTML = "☼";
     i = 0;
     })
   }
