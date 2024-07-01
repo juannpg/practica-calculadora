@@ -3,7 +3,7 @@ var i = 0;
 
 const calculadora = document.getElementById("calculadora");
 const body = document.getElementById("body");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".boton");
 
 themeBtn.addEventListener("click", cambioTema)
 

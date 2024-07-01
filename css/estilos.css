@@ -57,9 +57,14 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
 #botonTema {
   background-color: #f7e5c5;
+}
+
+.hover {
+  background-color: rgb(145, 145, 76);
+  
 }
