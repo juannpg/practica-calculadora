@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(18,18,18,255);
+  background-color: rgb(253, 253, 242);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@ p {
 }
 
 #main {
-  background-color: #2e2e2e;
+  background-color: #fff3e8;
   border-style: solid;
   border-color: #d3d3d3;
   border-radius: 17px;
@@ -52,7 +52,7 @@ button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   border-radius: 10px;
-  background-color :#535353;
+  background-color :#f7e5c5;
   color: rgb(161, 161, 161);
   border: none;
   padding: 10px 20px;
@@ -60,9 +60,82 @@ button {
   transition: 0.3s;
 }
 
-#themeBtn {
+/* #themeBtn {
   background-color: #f7e5c5;
+} */
+
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  /* font-size: 14px; */
+  position: relative;
+  display: inline-block;
+  width: 78px;
+  cursor: pointer;
 }
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
 
 .hover {
   background-color: rgb(145, 145, 76);
