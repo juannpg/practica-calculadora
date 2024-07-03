@@ -1,39 +1,44 @@
-const themeBtn = document.getElementById("themeBtn");
-var i = 0;
+const toggleBtn = document.getElementById("toggleBtn");
+let isDarkMode = false;
 
 const main = document.getElementById("main");
 const body = document.getElementById("body");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".boton");
 
-themeBtn.addEventListener("click", cambioTema)
+toggleBtn.addEventListener("click", cambioTema);
 
-function cambioTema() {
-  if (i === 0) {
+function cambioTema(event) {
+  if (isDarkMode === true) {
     //activar modo claro
-    body.style.backgroundColor = "rgb(253, 253, 242)";
-    main.style.backgroundColor = "#fff3e8";
+    body.classList.remove('oscuro');
+    body.classList.add('claro');
+    main.classList.remove('oscuro');
+    main.classList.add('claro');
     buttons.forEach((button) => {
-      button.style.backgroundColor = "#f7e5c5";
-      button.style.color = "rgb(161, 161, 161)";
-    //se pone del color oscuro
-    themeBtn.style.backgroundColor = "#535353";
-
-    themeBtn.innerHTML = "";
-    themeBtn.innerHTML = "☾";
-    })
-    i++;
-  } else if (i === 1){
+      if (button !== toggleBtn) {
+        button.classList.remove('oscuro');
+        button.classList.add('claro');
+      } else if (button == toggleBtn) {
+        toggleBtn.classList.remove('claro');
+        toggleBtn.classList.add('oscuro');
+      }
+    }) 
+    isDarkMode = !isDarkMode;
+  } else if (isDarkMode === false){
     //activar modo oscuro
-    body.style.backgroundColor ="rgba(18,18,18,255)";
-    main.style.backgroundColor ="#2e2e2e";
+    body.classList.remove('claro');
+    body.classList.add('oscuro');
+    main.classList.remove('claro');
+    main.classList.add('oscuro');
     buttons.forEach((button) => {
-      button.style.backgroundColor = "#535353";
-      button.style.color = "rgb(161, 161, 161)";
-    themeBtn.style.backgroundColor = "#f7e5c5";
-
-    themeBtn.innerHTML = "";
-    themeBtn.innerHTML = "☼";
-    })
-    i--;
+      if (button !== toggleBtn) {
+        button.classList.remove('claro');
+        button.classList.add('oscuro');
+      } else if (button == toggleBtn) {
+        toggleBtn.classList.remove('oscuro');
+        toggleBtn.classList.add('claro');
+      }
+    }) 
+    isDarkMode = !isDarkMode;
   }
 }

@@ -1,9 +1,16 @@
-body {
-  background-color: rgba(18,18,18,255);
+#body {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 200px;
+}
+
+#body.claro {
+  background-color: rgb(253, 253, 242);
+}
+
+#body.oscuro {
+  background-color: rgba(18,18,18,255);
 }
 
 p {
@@ -13,9 +20,7 @@ p {
 }
 
 #main {
-  background-color: #2e2e2e;
   border-style: solid;
-  border-color: #d3d3d3;
   border-radius: 17px;
   height: 380px;
   width: 365px;
@@ -24,6 +29,15 @@ p {
   padding-right: 17px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: background-color 0.3s;
+  border-color: #d3d3d3;
+}
+
+#main.claro {
+  background-color: #fff3e8;
+}
+
+#main.oscuro {
+  background-color: #2e2e2e;
 }
 
 div#output {
@@ -45,21 +59,41 @@ div.botones1, .botones2, .botones3, .botones4 {
   width: fit-content;
 }
 
-button {
+.boton {
   height: 50px;
   width: 75px;
   margin: 6px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   border-radius: 10px;
-  background-color :#535353;
+  background-color :#f7e5c5;
   color: rgb(161, 161, 161);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
-#themeBtn {
+.boton.claro {
+  background-color :#f7e5c5;
+  color: rgb(161, 161, 161);
+}
+
+.boton.oscuro {
+  background-color: #535353;
+  color: rgb(161, 161, 161);
+}
+
+.boton.claro.hover {
+  background-color: rgb(199, 181, 181);
+}
+
+.boton.oscuro.hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+#toggleBtn {
   background-color: #f7e5c5;
 }
+
