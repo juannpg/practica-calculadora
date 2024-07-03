@@ -6,6 +6,7 @@ const pruebaBtn = document.getElementById("prueba");
 pruebaBtn.addEventListener("click", pruebaFunc);
 const btnRandom = document.getElementById("AC");
 
+
 const main = document.getElementById("main");
 const body = document.getElementById("body");
 const buttons = document.querySelectorAll(".boton");
