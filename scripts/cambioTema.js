@@ -1,6 +1,11 @@
 const toggleBtn = document.getElementById("toggleBtn");
 let isDarkMode = false;
 
+//prueba
+const pruebaBtn = document.getElementById("prueba");
+pruebaBtn.addEventListener("click", pruebaFunc);
+const btnRandom = document.getElementById("AC");
+
 const main = document.getElementById("main");
 const body = document.getElementById("body");
 const buttons = document.querySelectorAll(".boton");
@@ -41,4 +46,12 @@ function cambioTema(event) {
     }) 
     isDarkMode = !isDarkMode;
   }
+}
+
+//prueba
+function pruebaFunc() {
+  console.log("ESTAMOS EN TEMA " + body.className.toUpperCase())
+  console.log("toggleBtn = " + toggleBtn.className)
+  console.log("botones = " + btnRandom.className)
+  console.log("");
 }
