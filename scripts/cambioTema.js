@@ -1,34 +1,44 @@
-const toggle = document.getElementById("toggle");
-var i = 1;
+const toggleBtn = document.getElementById("toggleBtn");
+let isDarkMode = false;
 
 const main = document.getElementById("main");
 const body = document.getElementById("body");
 const buttons = document.querySelectorAll(".boton");
 
-toggle.addEventListener("click", cambioTema)
+toggleBtn.addEventListener("click", cambioTema);
 
-function cambioTema() {
-  if (i === 0) {
+function cambioTema(event) {
+  if (isDarkMode === true) {
     //activar modo claro
     body.classList.remove('oscuro');
     body.classList.add('claro');
     main.classList.remove('oscuro');
     main.classList.add('claro');
     buttons.forEach((button) => {
-      button.classList.remove('oscuro');
-      button.classList.add('claro');
-    })
-    i++;
-  } else if (i === 1){
+      if (button !== toggleBtn) {
+        button.classList.remove('oscuro');
+        button.classList.add('claro');
+      } else if (button == toggleBtn) {
+        toggleBtn.classList.remove('claro');
+        toggleBtn.classList.add('oscuro');
+      }
+    }) 
+    isDarkMode = !isDarkMode;
+  } else if (isDarkMode === false){
     //activar modo oscuro
     body.classList.remove('claro');
     body.classList.add('oscuro');
     main.classList.remove('claro');
     main.classList.add('oscuro');
     buttons.forEach((button) => {
-      button.classList.remove('claro');
-      button.classList.add('oscuro');
-    })
-    i--;
+      if (button !== toggleBtn) {
+        button.classList.remove('claro');
+        button.classList.add('oscuro');
+      } else if (button == toggleBtn) {
+        toggleBtn.classList.remove('oscuro');
+        toggleBtn.classList.add('claro');
+      }
+    }) 
+    isDarkMode = !isDarkMode;
   }
 }
