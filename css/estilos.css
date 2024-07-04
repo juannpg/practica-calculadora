@@ -66,8 +66,6 @@ div.botones1, .botones2, .botones3, .botones4 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   border-radius: 10px;
-  background-color :#f7e5c5;
-  color: rgb(161, 161, 161);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -90,10 +88,5 @@ div.botones1, .botones2, .botones3, .botones4 {
 
 .boton.oscuro.hover {
   background-color: rgb(255, 255, 255);
-}
-
-
-#toggleBtn {
-  background-color: #f7e5c5;
 }
 

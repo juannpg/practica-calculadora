@@ -7,7 +7,7 @@ buttonContainer.addEventListener("click", function (event) {
     if (event.target.id === "AC") {
       output.innerHTML = "";
     } else {
-    if (event.target.id === "toggleBtn" || event.target.id === "prueba") {
+    if (event.target.id === "toggleBtn") {
       output.innerHTML += "";
     } else {
       if (event.target.id === "=") {

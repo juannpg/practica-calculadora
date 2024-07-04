@@ -1,19 +1,13 @@
 const toggleBtn = document.getElementById("toggleBtn");
 let isDarkMode = false;
 
-//prueba
-const pruebaBtn = document.getElementById("prueba");
-pruebaBtn.addEventListener("click", pruebaFunc);
-const btnRandom = document.getElementById("AC");
-
-
 const main = document.getElementById("main");
 const body = document.getElementById("body");
 const buttons = document.querySelectorAll(".boton");
 
 toggleBtn.addEventListener("click", cambioTema);
 
-function cambioTema(event) {
+function cambioTema() {
   if (isDarkMode === true) {
     //activar modo claro
     body.classList.remove('oscuro');
@@ -29,7 +23,6 @@ function cambioTema(event) {
         toggleBtn.classList.add('oscuro');
       }
     }) 
-    isDarkMode = !isDarkMode;
   } else if (isDarkMode === false){
     //activar modo oscuro
     body.classList.remove('claro');
@@ -45,14 +38,6 @@ function cambioTema(event) {
         toggleBtn.classList.add('claro');
       }
     }) 
-    isDarkMode = !isDarkMode;
   }
-}
-
-//prueba
-function pruebaFunc() {
-  console.log("ESTAMOS EN TEMA " + body.className.toUpperCase())
-  console.log("toggleBtn = " + toggleBtn.className)
-  console.log("botones = " + btnRandom.className)
-  console.log("");
+  isDarkMode = !isDarkMode;
 }
